@@ -1,0 +1,26 @@
+{
+  "name": "next-ssr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "framer-motion": "^7.6.7",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "sass": "^1.55.0",
+    "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
+  }
+}
