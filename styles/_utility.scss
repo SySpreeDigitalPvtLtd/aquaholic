@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.container-full {
+    min-height: 100vh;
+}
+.section-full {
+    min-height: 100vh;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 300px);
+}

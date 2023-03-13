@@ -1,0 +1,72 @@
+@import "variables";
+@import "typography";
+
+.heroSection {
+    min-height: 100vh;
+    display: flex;
+    .heroBlockBg {
+        background-image: url("../public/Images/hero-bg-eyes.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 500px;
+    }
+    .heroBlockWhite {
+        width: 100%;
+        background-color: $bg-offwhite;
+    }
+    .heroContent {
+    }
+    .heroBlockThird {
+        max-width: 150px;
+    }
+    .overlayContainer {
+        width: 100%;
+        // background-color: red;
+        min-height: 100vh;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .heroContentBox {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .heroAbstract {
+            max-width: 600px;
+        }
+        .animatedContent {
+            margin-left: -5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .highlight {
+                font-size: 5rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-family: $font-family-bold;
+                color: $primary;
+                
+            }
+            .heroMeta {
+                font-weight: 300;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+        }
+        .heroContentText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .heroImg {
+            max-width: 450px;
+        }
+        .heroAbstractText {
+            padding: 2rem 0rem;
+        }
+    }
+}
