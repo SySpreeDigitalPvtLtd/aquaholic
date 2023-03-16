@@ -19,3 +19,42 @@
     gap: 1rem;
     grid-template-columns: repeat(3, 300px);
 }
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+.py-1 {
+    padding: 1rem 0rem;
+}
+.py-2 {
+    padding: 2rem 0rem;
+}
+.px-1 {
+    padding: 0rem 1rem;
+}
+.px-2 {
+    padding: 0rem 2rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+.m-2 {
+    margin: 2rem;
+}
+
+.my-1 {
+    margin: 1rem 0rem;
+}
+.my-2 {
+    margin: 2rem 0rem;
+}
+.mx-1 {
+    margin: 0rem 1rem;
+}
+.mx-2 {
+    margin: 0rem 2rem;
+}

@@ -5,14 +5,18 @@ import heroImg from "../../public/Images/hero-abstract-image.png";
 
 const HeroSection = () => {
   return (
-    <div className={`${styles.heroSection}`}>
+    <section className={`${styles.heroSection}`}>
+      {/* thre column blocks */}
       <div className={`${styles.heroBlockWhite} ${styles.heroContent}`}></div>
       <div className={`${styles.heroBlockBg}`}></div>
       <div
         className={`${styles.heroBlockWhite} ${styles.heroBlockThird}`}
       ></div>
+      {/* overlay container for hero content */}
       <div className={`${styles.overlayContainer}`}>
+        {/* hero content */}
         <div className={`${styles.heroContentBox}`}>
+          {/* hero section abstract container */}
           <div className={`${styles.heroAbstract}`}>
             <div className={`${styles.heroImg}`}>
               <Image src={heroImg} />
@@ -24,6 +28,7 @@ const HeroSection = () => {
             </p>
             <p className={`${styles.link}`}>Our Portfolio</p>
           </div>
+          {/* animated text */}
           <div className={`${styles.animatedContent}`}>
             <p className={`${styles.heroMeta}`}>DIGITAL BRANDING</p>
             <div
@@ -33,12 +38,14 @@ const HeroSection = () => {
               <span className={`${styles.highlight} ${styles.highlightTwo}`}>
                 Content
               </span>
-              <span className={`${styles.highlight}`}>Print</span>
+              <span className={`${styles.highlight} ${styles.highlightThree}`}>
+                Print
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
