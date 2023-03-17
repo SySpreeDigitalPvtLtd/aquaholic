@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import styles from "../../styles/Home.module.scss";
 import aboutBg from "../../public/Images/about-img-bg.png";
 const AboutSection = () => {
@@ -40,6 +40,27 @@ const AboutSection = () => {
             <div className={`${styles.stat}`}>
               <p className={`${styles.tag}`}>Projects Completed</p>
               <p className={`${styles.number}`}> 2,257</p>
+            </div>
+          </div>
+          {/* mobile version */}
+          <div className={`${styles.aboutStatsMobile}`}>
+            <div className={`${styles.statGroup}`}>
+              <div className={`${styles.stat}`}>
+                <p className={`${styles.number}`}>2014</p>
+              </div>
+              <p className={`${styles.tag}`}>since</p>
+            </div>
+            <div className={`${styles.statGroup}`}>
+              <div className={`${styles.stat}`}>
+                <p className={`${styles.number}`}>80+</p>
+              </div>
+              <p className={`${styles.tag}`}>Happy Clients</p>
+            </div>
+            <div className={`${styles.statGroup}`}>
+              <div className={`${styles.stat}`}>
+                <p className={`${styles.number}`}>2,257</p>
+              </div>
+              <p className={`${styles.tag}`}>Projects Completed</p>
             </div>
           </div>
         </div>

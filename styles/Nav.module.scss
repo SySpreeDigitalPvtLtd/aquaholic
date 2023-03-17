@@ -1,0 +1,61 @@
+@import "variables";
+@import "typography";
+@import "mixins";
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    z-index: 99999;
+    position: fixed;
+    color: $text-white;
+    mix-blend-mode: difference;
+    transition: 0.3s all;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $text-white;
+    transition: 0.8s all;
+    z-index: 9999;
+    position: fixed;
+    .navContainer {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .menuList {
+            padding: 0rem 2rem;
+            ul {
+                li {
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    color: $primary;
+                    // margin: 2rem 0rem;
+                    @include mobile {
+                        font-size: 2rem;
+                        padding: 1rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.navbarHide {
+    transform: translateX(-1900px);
+}
+
+.navbarShow {
+    transform: translateX(0px);
+}

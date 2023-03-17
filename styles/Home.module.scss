@@ -53,7 +53,7 @@
     // three column blocks
     .heroBlockWhite {
         width: 100%;
-        background-color: $bg-offwhite;
+        background-color: $text-white;
     }
 
     .heroBlockBg {
@@ -63,10 +63,16 @@
         background-position: center;
         width: 100%;
         max-width: 500px;
+        @include mobile {
+            min-width: 150px;
+        }
     }
 
     .heroBlockThird {
         max-width: 150px;
+        @include mobile {
+            max-width: 0px;
+        }
     }
 
     .overlayContainer {
@@ -82,7 +88,7 @@
             justify-content: flex-start;
             width: 100%;
             max-width: 1100px;
-            padding: 2rem 1rem;
+            padding: 2rem 2rem;
             @include tablet {
                 flex-direction: column-reverse;
                 align-items: center;
@@ -162,7 +168,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 7rem 2rem;
+        padding: 7rem 1rem;
         @include tablet {
             max-width: 600px;
         }
@@ -173,7 +179,7 @@
         .aboutContent {
             width: 100%;
             max-width: 600px;
-            text-align: justify;
+            // text-align: justify;
             // padding: 2rem 1rem;
             padding: 0rem 5rem;
             @include tablet {
@@ -186,6 +192,54 @@
             margin: 1rem 0rem;
             max-width: 400px;
             @include mobile {
+                display: none;
+
+                flex-direction: column;
+                gap: 1rem;
+                display: none;
+            }
+            .stat {
+                background-color: $text-white;
+                color: $primary;
+                border-radius: 100%;
+                min-width: 120px;
+                max-width: 120px;
+                min-height: 120px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 1rem 0rem;
+
+                .tag {
+                    font-size: 0.7rem;
+                    color: $primary;
+                    text-transform: uppercase;
+                }
+                .number {
+                    font-size: 1.2rem;
+                    font-weight: 900;
+                    // margin: 1rem 0rem;
+                }
+            }
+        }
+        .aboutStatsMobile {
+            .statGroup {
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                gap: 2rem;
+            }
+            display: flex;
+            display: none;
+            justify-content: space-between;
+            margin: 1rem 0rem;
+            max-width: 400px;
+            @include mobile {
+                display: block;
+                display: flex;
                 flex-direction: column;
                 gap: 1rem;
             }
@@ -412,17 +466,32 @@
 .contactSection {
     min-height: 100vh;
     display: flex;
-    // align-items: center;
+    align-items: center;
     justify-content: center;
+    // background-size: cover;
+    // background-position: left;
+    background-repeat: no-repeat;
+
+    @include tablet {
+        flex-direction: column;
+        background-size: 1300px;
+    }
+    @include mobile {
+        background-size: 1900px;
+        // background-position: 40%;
+        background-position: center;
+    }
     .contentBg {
         padding: 5rem 3rem;
         padding-top: 10rem;
+        @include tablet {
+            padding: 5rem 2rem;
+        }
         .titleTwo {
-            font-size: 3rem;
-            font-weight: 900;
+            // font-size: 3rem;
+            // font-weight: 900;
             color: white;
             line-height: 1.3;
-            text-transform: uppercase;
         }
         .text {
             mix-blend-mode: lighten;
@@ -430,12 +499,21 @@
     }
     .contentBox {
         background-color: $text-white;
-        min-width: 900px;
+        // min-width: 900px;
+
+        width: 100%;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 5rem;
+        @include tablet {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            // padding-left: 0rem;
+            padding: 1rem 2rem;
+            min-height: 80vh;
+        }
         .titleTwo {
             color: $secondary;
         }
@@ -446,10 +524,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            .btn {
-                background-color: $secondary;
-                color: white;
-            }
+
             .formGroup {
                 display: flex;
                 flex-direction: column;

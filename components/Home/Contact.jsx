@@ -8,7 +8,7 @@ const Contact = () => {
       style={{ backgroundImage: `url(${contactBg.src})` }}
     >
       <div className={`${styles.contentBg}`}>
-        <h2 className={`${styles.titleTwo}`}>Tell us about your project</h2>
+        <h2 className={`${styles.titleTwo}`}>Tell us about your project !</h2>
         <p className={`${styles.text}`}>
           We help clients grow their business and websites online by driving
           more traffic, more calls, and more sales
