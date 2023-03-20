@@ -1,0 +1,135 @@
+@import "variables";
+@import "typography";
+@import "mixins";
+
+.meta {
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-family-bold;
+    color: $secondary;
+    @include mobile {
+        font-size: 2.5rem;
+    }
+}
+.titleTwo {
+    font-size: 3rem;
+    font-weight: 400;
+}
+.text {
+    color: rgba(255, 255, 255, 0.733);
+    padding: 1rem 0rem;
+}
+.textDark {
+    padding: 2rem 0rem;
+    color: $secondary;
+}
+.btn {
+    width: 100%;
+    max-width: 190px;
+    padding: 1rem 2rem;
+    outline: 1px solid $primary;
+    background-color: $text-white;
+    border: none;
+    transition: 0.5s all;
+}
+.btn:hover {
+    background-color: $primary;
+    color: $text-white;
+    outline-color: $text-white;
+    cursor: pointer;
+}
+
+.aboutSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    background-size: 80%;
+    // @include mobile {
+    //     background-size: 150%;
+    //     background-position: center;
+    // }
+    background-position: center;
+    background-repeat: no-repeat;
+    @include mobile {
+        background-size: cover;
+    }
+    .container {
+        width: 100%;
+        // max-width: 1200px;
+        display: flex;
+        align-items: center;
+        padding: 2rem 0rem;
+        gap: 1rem;
+        .title {
+            text-transform: none;
+            font-weight: 500;
+            font-size: 4.5rem;
+            line-height: 97px;
+        }
+        .aboutContent {
+            // max-width: 800px;
+            width: 100%;
+            padding: 0rem 2rem;
+        }
+        .text {
+            color: $primary;
+            padding: 2rem 0rem;
+        }
+        .btn {
+            background-color: transparent;
+            &:hover {
+                background-color: $primary;
+                // color: $primary;
+                // outline: 1px solid $primary;
+            }
+        }
+        .aboutAbstractImage {
+            max-width: 500px;
+            min-width: 300px;
+            margin-left: -10rem;
+            @include mobile {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+.featureSection {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .title {
+            text-transform: none;
+            font-weight: 500;
+            font-size: 4.5rem;
+            line-height: 97px;
+        }
+        .text {
+            color: $primary;
+        }
+        .featureGrid {
+            display: flex;
+            gap: 2rem;
+            .featureCard {
+                max-width: 400px;
+            }
+        }
+    }
+}
