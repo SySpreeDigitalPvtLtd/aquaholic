@@ -2,6 +2,33 @@ import React from "react";
 import styles from "../../styles/About.module.scss";
 
 const AboutFeatures = () => {
+  const gridData = [
+    {
+      index: "01",
+      title: "We are also inventive.",
+      content:
+        "An uncompromising team in pursuit of perfection, who stands for wide-eyed creativity. Our clients will bear testimony.",
+    },
+    {
+      index: "02",
+      title: "We are humble & ethical.",
+      content:
+        "An uncompromising team in pursuit of perfection, who stands for wide-eyed creativity. Our clients will bear testimony.",
+    },
+    {
+      index: "03",
+      title: "We've been around",
+      content:
+        "An uncompromising team in pursuit of perfection, who stands for wide-eyed creativity. Our clients will bear testimony.",
+    },
+    {
+      index: "04",
+      title: "We are based in Abu Dhabi.",
+      content:
+        "An uncompromising team in pursuit of perfection, who stands for wide-eyed creativity. Our clients will bear testimony.",
+    },
+  ];
+
   return (
     <section className={`${styles.featureSection}`}>
       <div className={`${styles.container}`}>
@@ -15,23 +42,13 @@ const AboutFeatures = () => {
 
         <div className={`${styles.featureGrid}`}>
           {/* feature grid */}
-          <div className={`${styles.featureCard}`}>
-            <p className={`${styles.meta}`}>01</p>
-            <h3 className={`${styles.titleTwo}`}>We are also inventive.</h3>
-            <p className={`${styles.text}`}>
-              An uncompromising team in pursuit of perfection, who stands for
-              wide-eyed creativity. Our clients will bear testimony.
-            </p>
-          </div>
-          {/* feaature 2 */}
-          <div className={`${styles.featureCard}`}>
-            <p className={`${styles.meta}`}>02</p>
-            <h3 className={`${styles.titleTwo}`}>We are humble & ethical.</h3>
-            <p className={`${styles.text}`}>
-              An uncompromising team in pursuit of perfection, who stands for
-              wide-eyed creativity. Our clients will bear testimony.
-            </p>
-          </div>
+          {gridData.map((ele, ind) => (
+            <div key={ind} className={`${styles.featureCard}`}>
+              <p className={`${styles.meta}`}>{ele.index}</p>
+              <h3 className={`${styles.titleTwo}`}>{ele.title}</h3>
+              <p className={`${styles.text}`}>{ele.content}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
