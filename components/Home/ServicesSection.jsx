@@ -5,10 +5,10 @@ import service1 from "../../public/Images/service-grid-1.png";
 import service2 from "../../public/Images/service-grid-2.png";
 import service3 from "../../public/Images/service-grid-3.png";
 import serviceBg from "../../public/Images/service-bg.png";
-
+import Section from "../Common/Section";
 const ServicesSection = () => {
   return (
-    <section
+    <Section
       className={`${styles.servicesSection}`}
       style={{
         backgroundImage: `url(${serviceBg.src})`,
@@ -33,7 +33,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

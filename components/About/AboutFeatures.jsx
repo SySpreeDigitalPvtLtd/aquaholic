@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/About.module.scss";
-
+import Section from "../Common/Section";
 const AboutFeatures = () => {
   const gridData = [
     {
@@ -30,15 +30,13 @@ const AboutFeatures = () => {
   ];
 
   return (
-    <section className={`${styles.featureSection}`}>
+    <Section className={`${styles.featureSection} ${styles.section}`}>
       <div className={`${styles.container}`}>
         <div>
           <h2 className={`${styles.title}`}>
             Things we are proud of at Aquaholic
           </h2>
         </div>
-
-        <hr />
 
         <div className={`${styles.featureGrid}`}>
           {/* feature grid */}
@@ -51,7 +49,7 @@ const AboutFeatures = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

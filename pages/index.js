@@ -15,16 +15,14 @@ export default function Home() {
       <Head>
         <title>Aquaholic | Design First Agency</title>
       </Head>
-      <div>
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <ServicesSlider />
-        <ClientSlider />
-        <TestimonialSection />
-        <PortfolioSection />
-        <Contact />
-      </div>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <ServicesSlider />
+      <ClientSlider />
+      <TestimonialSection />
+      <PortfolioSection />
+      <Contact />
     </div>
   );
 }

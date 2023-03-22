@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "../../styles/Home.module.scss";
 import contactBg from "../../public/Images/contact-bg.png";
+import Section from "../Common/Section";
 const Contact = () => {
   return (
-    <section
+    <Section
       className={`${styles.contactSection}`}
       style={{ backgroundImage: `url(${contactBg.src})` }}
     >
@@ -34,7 +35,7 @@ const Contact = () => {
           <button className={`${styles.btn}`}>Contact Us</button>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

@@ -3,11 +3,11 @@ import styles from "../../styles/About.module.scss";
 import aboutBg from "../../public/Images/about-page/about-bg.png";
 import aboutAbstract from "../../public/Images/about-page/about-hero-abstract.png";
 import Image from "next/image";
-
+import Section from "../Common/Section";
 const AboutHero = () => {
   return (
-    <section
-      className={`${styles.aboutSection}`}
+    <Section
+      className={`${styles.aboutSection} ${styles.section}`}
       style={{ backgroundImage: `url(${aboutBg.src})` }}
     >
       <div className={`${styles.container}`}>
@@ -26,7 +26,7 @@ const AboutHero = () => {
           <button className={`${styles.btn}`}>Contact Us</button>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

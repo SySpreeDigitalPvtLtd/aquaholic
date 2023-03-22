@@ -6,7 +6,7 @@ import imgTwo from "../../public/Images/about-page/team-image-2.png";
 import imgThree from "../../public/Images/about-page/team-image-3.png";
 import imgFour from "../../public/Images/about-page/team-image-4.png";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import Section from "../Common/Section";
 const AboutTeams = () => {
   const teamData = [
     {
@@ -36,7 +36,7 @@ const AboutTeams = () => {
   ];
 
   return (
-    <section className={`${styles.teamSection}`}>
+    <Section className={`${styles.teamSection} ${styles.section}`}>
       <div className={`${styles.container}`}>
         <div className={`${styles.content}`}>
           <p className={`${styles.meta}`}>our team</p>
@@ -68,7 +68,7 @@ const AboutTeams = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

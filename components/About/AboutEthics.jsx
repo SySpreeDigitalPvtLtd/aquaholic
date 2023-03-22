@@ -3,10 +3,11 @@ import React from "react";
 import styles from "../../styles/About.module.scss";
 import sectionImage from "../../public/Images/about-page/about-ethics-bg.png";
 import bgImage from "../../public/Images/about-page/ethics-bg.png";
+import Section from "../Common/Section";
 const AboutEthics = () => {
   return (
-    <section
-      className={`${styles.ethicSection}`}
+    <Section
+      className={`${styles.ethicSection} ${styles.section}`}
       style={{ backgroundImage: `url(${bgImage.src})` }}
     >
       <div className={`${styles.container}`}>
@@ -26,7 +27,7 @@ const AboutEthics = () => {
           <Image src={sectionImage} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

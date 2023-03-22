@@ -5,7 +5,7 @@ import logoTwo from "../../public/Images/clients/client-emirates.png";
 import logoThree from "../../public/Images/clients/client-finance.png";
 import logoFour from "../../public/Images/clients/client-al.png";
 import logoFive from "../../public/Images/clients/client-aldar.png";
-
+import Section from "../Common/Section";
 import Image from "next/image";
 const ClientSlider = () => {
   const clientImages = [
@@ -26,7 +26,7 @@ const ClientSlider = () => {
     },
   ];
   return (
-    <section className={`${styles.clientLogos}`}>
+    <Section className={`${styles.clientLogos}`}>
       <div className={`${styles.logoContainer}`}>
         <p className={`${styles.meta}`}>WE ARE PROUD TO HAVE WORKED WITH</p>
         <div className={`${styles.logoSlider}`}>
@@ -37,7 +37,7 @@ const ClientSlider = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

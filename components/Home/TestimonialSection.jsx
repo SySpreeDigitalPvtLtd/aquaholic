@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import styles from "../../styles/Home.module.scss";
 import icon from "../../public/Images/left-quotes.png";
-
+import Section from "../Common/Section";
 const TestimonialSection = () => {
   return (
-    <section className={`${styles.testimonialSection}`}>
+    <Section className={`${styles.testimonialSection}`}>
       <div className={`${styles.testimonialsContainer}`}>
         <h2 className={`${styles.titleTwo}`}>Testimonials</h2>
         <div className={`${styles.slider}`}>
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

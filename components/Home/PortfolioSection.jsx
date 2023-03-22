@@ -4,12 +4,15 @@ import styles from "../../styles/Home.module.scss";
 import workAbstract from "../../public/Images/portfolio-home-abstract.png";
 import workOne from "../../public/Images/work/work-1.png";
 import portfolioBg from "../../public/Images/portfolio-bg.png";
-
+import Section from "../Common/Section";
 const PortfolioSection = () => {
   return (
-    <section
+    <Section
       className={`${styles.portfolioSection}`}
-      style={{ backgroundImage: `url(${portfolioBg.src})`, backgroundSize: 'cover'}}
+      style={{
+        backgroundImage: `url(${portfolioBg.src})`,
+        backgroundSize: "cover",
+      }}
     >
       <div className={`${styles.container}`}>
         {/* content */}
@@ -37,7 +40,7 @@ const PortfolioSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

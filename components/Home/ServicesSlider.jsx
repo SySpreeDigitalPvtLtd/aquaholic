@@ -3,9 +3,10 @@ import React from "react";
 import styles from "../../styles/Home.module.scss";
 import sliderImgOne from "../../public/Images/slider-img-1.png";
 import sliderBg from "../../public/Images/service-slider-bg.png";
+import Section from "../Common/Section";
 const ServicesSlider = () => {
   return (
-    <section
+    <Section
       className={`${styles.serviceSliderSection}`}
       style={{
         backgroundImage: `url(${sliderBg.src})`,
@@ -29,7 +30,7 @@ const ServicesSlider = () => {
           <Image src={sliderImgOne} />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

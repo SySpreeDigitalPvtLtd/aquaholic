@@ -3,9 +3,10 @@ import React from "react";
 import styles from "../../styles/About.module.scss";
 import authorSign from "../../public/Images/about-page/author-sign.png";
 import authorPotrait from "../../public/Images/about-page/quote-portrait.png";
+import Section from "../Common/Section";
 const AboutQuote = () => {
   return (
-    <section className={`${styles.quoteSection}`}>
+    <Section className={`${styles.quoteSection} ${styles.section}`}>
       <div className={`${styles.container}`}>
         <div className={`${styles.image}`}>
           <Image src={authorPotrait} />
@@ -30,7 +31,7 @@ const AboutQuote = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

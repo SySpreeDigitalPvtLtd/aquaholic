@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import styles from "../styles/Footer.module.scss";
 import logo from "../public/Images/logo-footer.png";
 import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";

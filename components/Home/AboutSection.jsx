@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "../../styles/Home.module.scss";
 import aboutBg from "../../public/Images/about-img-bg.png";
+import Section from "../Common/Section";
 const AboutSection = () => {
   return (
-    <section
+    <Section
       className={`${styles.aboutSection}`}
       style={{
         backgroundImage: `url(${aboutBg.src})`,
@@ -65,7 +66,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

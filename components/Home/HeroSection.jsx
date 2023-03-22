@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 import styles from "../../styles/Home.module.scss";
 import heroImg from "../../public/Images/hero-abstract-image.png";
-
+import Section from "../Common/Section";
 const HeroSection = () => {
   return (
-    <section className={`${styles.heroSection}`}>
+    <Section className={`${styles.heroSection}`}>
       {/* thre column blocks */}
       <div className={`${styles.heroBlockWhite} ${styles.heroContent}`}></div>
       <div className={`${styles.heroBlockBg}`}></div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
