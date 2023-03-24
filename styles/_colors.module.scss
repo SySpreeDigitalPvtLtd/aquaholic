@@ -21,3 +21,10 @@ $base-margin: 0.75rem;
 // borders
 $base-border-radius: 12px;
 
+:export {
+    tertiary: $tertiary;
+    secondary: $secondary;
+    primary: $primary;
+    white: $text-white;
+    black: $text-dark;
+}

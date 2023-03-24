@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
         smooth: true,
         smoothMobile: false,
         resetNativeScroll: true,
+        multiplier: 1,
       });
     });
 

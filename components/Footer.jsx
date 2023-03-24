@@ -5,7 +5,7 @@ import logo from "../public/Images/logo-footer.png";
 import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className={`${styles.footerSection}`}>
+    <footer data-scroll-section className={`${styles.footerSection}`}>
       <div className={`${styles.footerContainer}`}>
         <div className={`${styles.footerColumn}`}>
           <h4 className={`${styles.titleTwo}`}>Products</h4>

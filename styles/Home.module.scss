@@ -543,3 +543,27 @@
         }
     }
 }
+
+.connectCTA {
+    background-color: $primary;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 5rem 2rem;
+        .content {
+            max-width: 680px;
+        }
+        .meta {
+            color: $text-white;
+        }
+        .title {
+            text-transform: none;
+            color: $text-white;
+            font-weight: 300;
+        }
+    }
+}
