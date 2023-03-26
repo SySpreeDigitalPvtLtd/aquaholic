@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import AboutSection from "../components/Home/AboutSection";
 import ClientSlider from "../components/Home/ClientSlider";
-import ConnectCTA from "../components/Home/ConnectCTA";
+import ConnectCTA from "../components/Common/ConnectCTA";
 import Contact from "../components/Home/Contact";
 import HeroSection from "../components/Home/HeroSection";
 import PortfolioSection from "../components/Home/PortfolioSection";
@@ -24,7 +24,7 @@ export default function Home() {
       <TestimonialSection />
       <PortfolioSection />
       {/* <Contact /> */}
-      <ConnectCTA />
+      {/* <ConnectCTA /> */}
     </>
   );
 }

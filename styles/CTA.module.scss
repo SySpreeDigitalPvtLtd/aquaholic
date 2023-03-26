@@ -90,3 +90,83 @@
         }
     }
 }
+.connectCTA {
+    background-color: $primary;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        @include tablet {
+            flex-direction: column;
+        }
+        .content {
+            max-width: 700px;
+        }
+        .meta {
+            color: $text-white;
+        }
+        .title {
+            text-transform: none;
+            color: $text-white;
+            font-weight: 300;
+        }
+        // circle rotate
+        .circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo {
+                position: absolute;
+                // width: var(--d-inner);
+                width: 150px;
+                height: 150px;
+                // height: var(--d-inner);
+                background-size: cover;
+                border-radius: 50%;
+                filter: contrast(1.5);
+            }
+
+            .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                color: $text-white;
+                animation: rotateText 15s linear infinite;
+                padding: 0rem;
+                > p {
+                    // letter-spacing: 1.5px;
+                    span {
+                        position: absolute;
+                        left: 50%;
+                        font-size: 0.8rem;
+                        transform-origin: 0 100px;
+                    }
+                }
+                @keyframes rotateText {
+                    0% {
+                        transform: rotate(360deg);
+                    }
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            @include tablet {
+                transform: scale(0.6);
+                // align-self: flex-start;
+                margin-left: -3rem;
+            }
+        }
+    }
+}

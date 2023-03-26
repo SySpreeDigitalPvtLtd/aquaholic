@@ -189,9 +189,23 @@
 }
 
 .servicesSection {
+    .flexFlipLeft {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        @include mobile {
+            flex-direction: column;
+            align-items: baseline;
+            gap: 2rem;
+        }
+        .serviceImage {
+            display: flex;
+            // max-width: 600px;
+        }
+    }
     .flexFlip {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         gap: 4rem;
         @include mobile {
             flex-direction: column;
