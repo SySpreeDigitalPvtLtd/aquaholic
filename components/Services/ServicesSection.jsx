@@ -69,8 +69,12 @@ const ServicesSection = () => {
           >
             <h2 className={`${styles.title}`}>{ele.title}</h2>
             <p className={`${styles.text}`}>{ele.content}</p>
+            <button className={`${styles.btn} my-1`}>Learn More</button>
           </div>
-          <div className={`${styles.serviceImage}`}>
+          <div
+            className={`${styles.serviceImage}`}
+            style={{ maxHeight: "700px" }}
+          >
             <Image
               data-scroll
               scroll-direction="vertical"

@@ -12,7 +12,8 @@
 html,
 body {
     font-family: $font-family;
-    scroll-behavior: auto;
+    // scroll-behavior: auto;
+    overscroll-behavior: none;
 }
 
 body {

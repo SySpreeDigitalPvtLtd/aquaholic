@@ -192,6 +192,7 @@
     .flexFlipLeft {
         display: flex;
         align-items: center;
+        flex-direction: row-reverse;
         gap: 4rem;
         @include mobile {
             flex-direction: column;

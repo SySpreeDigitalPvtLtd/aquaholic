@@ -5,24 +5,24 @@ import gsap from "gsap";
 // import NavBar from "./NavBar";
 
 const Layout = ({ children }) => {
-  useEffect(() => {
-    window.dispatchEvent(new Event("resize")), [children];
-    let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: false,
-        resetNativeScroll: true,
-        multiplier: 1,
-      });
-    });
+  // useEffect(() => {
+  //   window.dispatchEvent(new Event("resize")), [children];
+  //   let scroll;
+  //   import("locomotive-scroll").then((locomotiveModule) => {
+  //     scroll = new locomotiveModule.default({
+  //       el: document.querySelector("[data-scroll-container]"),
+  //       smooth: true,
+  //       smoothMobile: false,
+  //       resetNativeScroll: true,
+  //       multiplier: 1,
+  //     });
+  //   });
 
-    return () => {
-      // ctx.revert();
-      if (scroll) scroll.destroy();
-    };
-  });
+  //   return () => {
+  //     // ctx.revert();
+  //     if (scroll) scroll.destroy();
+  //   };
+  // });
   return (
     <>
       {/* navbar component here */}
