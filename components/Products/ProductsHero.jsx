@@ -31,7 +31,6 @@ const ProductsHero = () => {
             <h1 className={`${styles.title}`}>
               Make a Lasting Impression with High-Quality
               <span className={`${styles.highlight}`}>
-                {" "}
                 Print Media Services
               </span>
             </h1>

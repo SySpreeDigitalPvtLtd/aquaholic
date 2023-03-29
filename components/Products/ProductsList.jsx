@@ -92,6 +92,7 @@ const ProductsList = () => {
       link: "",
     },
   ];
+
   return (
     <Section className={`${styles.productsSection} ${styles.section}`}>
       {productData.map((ele, ind) => (
