@@ -16,12 +16,7 @@ import img9 from "../../public/Images/products/umbrella-1.jpg";
 const ProductsHero = () => {
   const sliderImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   //   product list data
-  const productData = [
-    {
-      product: "",
-      images: [],
-    },
-  ];
+
   return (
     <>
       <Section className={` ${styles.section} ${styles.productsHero} `}>

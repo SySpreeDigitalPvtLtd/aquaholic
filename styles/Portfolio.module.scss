@@ -18,7 +18,7 @@
     line-height: 1.15;
     padding: 1rem 0rem;
     @include mobile {
-        font-size: 1.9rem;
+        font-size: 2.5rem;
     }
 }
 .highlight {
@@ -79,6 +79,9 @@
     display: flex;
     overflow: hidden;
     flex-direction: row;
+    @include mobile {
+        flex-direction: column;
+    }
     .container {
         .content {
             max-width: 800px;
@@ -97,24 +100,34 @@
     .heroGallery {
         display: flex;
         background-color: $secondary;
+        flex-direction: column;
         width: 100%;
         min-height: 100vh;
         max-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+            min-height: 40vh;
+            max-height: 60vh;
+        }
         max-width: 800px;
         overflow: hidden;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .galleryImages {
             display: flex;
             margin: 0.2rem 1rem;
             gap: 0.5rem;
         }
+        .galleryImagesSecond {
+            flex-direction: row-reverse;
+        }
         .galleryImage {
             min-width: 250px;
-            max-width: 300px;
+            // max-width: 300px;
             // max-height: 400px;
             width: 100%;
 
-            display: flex;
+            // display: flex;
 
             overflow: hidden;
         }
@@ -129,9 +142,9 @@
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        gap: 4rem;
+        gap: 3rem;
         @include mobile {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: baseline;
             gap: 2rem;
         }
@@ -139,14 +152,15 @@
     .flexFlip {
         display: flex;
         align-items: center;
-
-        gap: 4rem;
+        flex-direction: row-reverse;
+        gap: 3rem;
         @include mobile {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: baseline;
             gap: 2rem;
-        }
-        .content {
+            .title {
+                padding: 0.5rem 0rem;
+            }
         }
     }
     .content {

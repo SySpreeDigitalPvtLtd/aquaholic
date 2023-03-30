@@ -18,13 +18,28 @@ const PortfolioHero = ({ imageGallery }) => {
       </div>
       <div className={`${styles.heroGallery}`}>
         {imageGallery.map((ele, ind) => (
-          <div className={`${styles.galleryImages}`}>
-            {ele.images.map((image, ind) => (
-              <div className={`${styles.galleryImage}`}>
-                <Image src={image.src} />
-              </div>
-            ))}
-          </div>
+          <>
+            <div
+              className={`${styles.galleryImages}`}
+              style={{ marginLeft: "-4rem" }}
+            >
+              {ele.images.map((image, ind) => (
+                <div className={`${styles.galleryImage}`}>
+                  <Image src={image.src} />
+                </div>
+              ))}
+            </div>
+            <div
+              className={`${styles.galleryImages} ${styles.galleryImagesSecond}`}
+              style={{ marginLeft: "-1rem" }}
+            >
+              {ele.images.map((image, ind) => (
+                <div className={`${styles.galleryImage} `}>
+                  <Image src={image.src} />
+                </div>
+              ))}
+            </div>
+          </>
         ))}
       </div>
     </Section>
