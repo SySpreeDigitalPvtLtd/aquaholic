@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/Portfolio.module.scss";
 import Section from "../../components/Common/Section";
 import Image from "next/image";
-
+import Link from "next/link";
 const PortfolioGallery = ({ imageGallery }) => {
   return (
     <Section className={`${styles.section} ${styles.gallerySection}`}>
@@ -28,7 +28,9 @@ const PortfolioGallery = ({ imageGallery }) => {
             <p className={`${styles.meta}`}>{ele.category}</p>
             <h2 className={`${styles.title}`}>{ele.title}</h2>
             <p className={`${styles.text}`}>{ele.type}</p>
-            <button className={`${styles.btn} my-1`}>Learn More</button>
+            <Link href={"/portfolio/" + ele.link}>
+              <button className={`${styles.btn} my-1`}>Learn More</button>
+            </Link>
           </div>
           <div className={`${styles.image}`}>
             <Image

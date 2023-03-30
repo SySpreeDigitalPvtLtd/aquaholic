@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import styles from "../../styles/Products.module.scss";
 import Section from "../Common/Section";
+import Link from "next/link";
 
 const ProductsList = ({ productsData }) => {
   return (
@@ -23,7 +24,9 @@ const ProductsList = ({ productsData }) => {
             <p className={`${styles.meta}`}>{ele.meta}</p>
             <h2 className={`${styles.title}`}>{ele.product}</h2>
             <p className={`${styles.text}`}>{ele.content}</p>
-            <button className={`${styles.btn} my-1`}>Learn More</button>
+            <Link href={"/products/" + ele.link}>
+              <button className={`${styles.btn} my-1`}>Learn More</button>
+            </Link>
           </div>
           <div className={`${styles.productImages}`}>
             {ele?.images.map((image, imgIndex) => (

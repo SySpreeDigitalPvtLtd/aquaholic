@@ -24,7 +24,7 @@ const products = () => {
         { src: img1, category: "Feather Flags" },
         { src: img2, category: "Feather Flags" },
       ],
-      link: "",
+      link: "flags-and-poles",
     },
     {
       product: "Exhibition and Display Products",
@@ -34,7 +34,7 @@ const products = () => {
         { src: img3, category: "Pop up exhibition display" },
         { src: img4, category: "Rollup Banners" },
       ],
-      link: "",
+      link: "exhibition-and-display-products",
     },
     {
       product: "Umbrella Shades and Tents",
@@ -44,7 +44,7 @@ const products = () => {
         { src: img10, category: "Umbrella Shades" },
         { src: img11, category: "Popup Tents" },
       ],
-      link: "",
+      link: "umbrella-and-tents",
     },
     {
       product: "PVC Cards",
@@ -54,7 +54,7 @@ const products = () => {
         { src: img12, category: "PVC Card" },
         { src: img9, category: "PVC Card" },
       ],
-      link: "",
+      link: "pvc-cards",
     },
     {
       product: "Digital Printing",
@@ -65,7 +65,7 @@ const products = () => {
         { src: img8, category: "Frosted Sticker" },
         { src: img13, category: "Banners Printing" },
       ],
-      link: "",
+      link: "digital-printing",
     },
     {
       product: "Offset Printing",
@@ -76,7 +76,7 @@ const products = () => {
         { src: img5, category: "Customized Packaging" },
         { src: img6, category: "Brochures" },
       ],
-      link: "",
+      link: "offset-printing",
     },
     {
       product: "Corporate Gifts",
@@ -86,7 +86,7 @@ const products = () => {
         { src: img5, category: "Customized Packaging" },
         { src: img6, category: "Brochures" },
       ],
-      link: "",
+      link: "corporate-gifts",
     },
   ];
 
