@@ -80,8 +80,29 @@
     .images {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 1.2rem;
+        .featuredImage {
+            display: flex;
+        }
+    }
+    .stats {
+        display: flex;
+        gap: 1.2rem;
+        justify-content: space-between;
+        @include tablet {
+            flex-direction: column;
+            gap: 0rem;
+        }
+        .group {
+            .icon {
+                color: $tertiary;
+            }
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
     }
 }

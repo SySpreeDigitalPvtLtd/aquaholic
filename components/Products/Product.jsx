@@ -8,6 +8,7 @@ const Product = ({ productList }) => {
   const product = router.query.product;
   const content = productList.find((ele) => ele.link === product);
   console.log(content);
+
   return (
     <Section className={`${styles.section} ${styles.productSection}`}>
       <div className={`${styles.container}`}>

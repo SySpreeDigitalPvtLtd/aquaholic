@@ -1,12 +1,46 @@
 import React from "react";
 import BlogHero from "../../components/Blogs/BlogHero";
 import BlogList from "../../components/Blogs/BlogList";
-
+import blogImg from "../../public/Images/blogs/blog-test.jpg";
 const BlogsListing = () => {
+  const blogContent = [
+    {
+      title: "5 Strategies to Boost Your Social Media Marketing in UAE",
+      meta: "ipsum",
+      feat: blogImg,
+      date: "29th March, 2023",
+      link: "lorem",
+    },
+    {
+      title: "Lorem ipsum dolor sit amit",
+      meta: "ipsum",
+      feat: blogImg,
+      link: "lorem",
+    },
+    {
+      title: "Lorem ipsum dolor sit amit",
+      meta: "ipsum",
+      feat: blogImg,
+      link: "lorem",
+    },
+    {
+      title: "Lorem ipsum dolor sit amit",
+      meta: "ipsum",
+      feat: blogImg,
+      link: "lorem",
+    },
+    {
+      title: "Lorem ipsum dolor sit amit",
+      meta: "ipsum",
+      feat: blogImg,
+      link: "lorem",
+    },
+  ];
+
   return (
     <>
       <BlogHero />
-      <BlogList />
+      <BlogList blogList={blogContent} />
     </>
   );
 };

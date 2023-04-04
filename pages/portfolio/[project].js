@@ -14,7 +14,24 @@ import img11 from "../../public/Images/portfolio/portfolio-11.webp";
 import img12 from "../../public/Images/portfolio/portfolio-12.webp";
 import Project from "../../components/Portfolio/Project";
 
+import fairmont1 from "../../public/Images/portfolio/projects/project-1/fairmont-1.jpg";
+import fairmont2 from "../../public/Images/portfolio/projects/project-1/fairmont-2.jpg";
+import fairmont3 from "../../public/Images/portfolio/projects/project-1/fairmont-3.jpg";
+import fairmont4 from "../../public/Images/portfolio/projects/project-1/fairmont-4.jpg";
+import fairmont5 from "../../public/Images/portfolio/projects/project-1/fairmont-5.jpg";
+import fairmont6 from "../../public/Images/portfolio/projects/project-1/fairmont-6.jpg";
+import fairmont7 from "../../public/Images/portfolio/projects/project-1/fairmont-7.jpg";
+import fairmont8 from "../../public/Images/portfolio/projects/project-1/fairmont-8.jpg";
+import fairmont9 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-1.jpg";
+import fairmont10 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-2.jpg";
+import fairmont11 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-3.jpg";
+import fairmont12 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-4.jpg";
+import fairmont13 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-5.jpg";
+import fairmont14 from "../../public/Images/portfolio/projects/project-1/fairmont-gallery-6.jpg";
+
 const PortfolioProject = () => {
+  // arrray containing all the project data on portfolio page
+
   const galleryImg = [
     {
       src: img1,
@@ -22,6 +39,30 @@ const PortfolioProject = () => {
       type: "Advertising, Newsletter, Social",
       category: "Web | Branding | Design",
       link: "fairmont-bab-al-bahr",
+      content:
+        "Situated at the gateway to the capital city of the UAE is Fairmont Bab Al Bahr, a beachfront five-star hotel in Abu Dhabi with unrivalled views of a design masterpiece - The Sheikh Zayed Grand Mosque. Fairmont’s world-class dining, including Marco Pierre White Restaurant from the former three-Michelin-star British chef, complete the luxury experience.",
+      industry: "Hospitality",
+      services: "Design | Advertising | Social",
+      date: "2019-2020",
+      website: "www.fairmont.com/abu-dhabi/",
+      featured: [
+        { img: fairmont1 },
+        { img: fairmont2 },
+        // { img: fairmont3 },
+        { img: fairmont4 },
+        { img: fairmont5 },
+        // { img: fairmont6 },
+        { img: fairmont7 },
+        { img: fairmont8 },
+      ],
+      gallery: [
+        { img: fairmont9 },
+        { img: fairmont10 },
+        { img: fairmont11 },
+        { img: fairmont12 },
+        { img: fairmont13 },
+        { img: fairmont14 },
+      ],
     },
     {
       src: img2,

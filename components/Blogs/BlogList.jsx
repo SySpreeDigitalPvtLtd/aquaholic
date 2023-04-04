@@ -1,43 +1,10 @@
 import React from "react";
 import styles from "../../styles/Blogs.module.scss";
 import Section from "../Common/Section";
-import blogImg from "../../public/Images/blogs/blog-test.jpg";
+
 import Image from "next/image";
 import Link from "next/link";
-const BlogList = () => {
-  const blogContent = [
-    {
-      title: "Lorem ipsum dolor sit amit",
-      meta: "ipsum",
-      feat: blogImg,
-      link: "lorem",
-    },
-    {
-      title: "Lorem ipsum dolor sit amit",
-      meta: "ipsum",
-      feat: blogImg,
-      link: "lorem",
-    },
-    {
-      title: "Lorem ipsum dolor sit amit",
-      meta: "ipsum",
-      feat: blogImg,
-      link: "lorem",
-    },
-    {
-      title: "Lorem ipsum dolor sit amit",
-      meta: "ipsum",
-      feat: blogImg,
-      link: "lorem",
-    },
-    {
-      title: "Lorem ipsum dolor sit amit",
-      meta: "ipsum",
-      feat: blogImg,
-      link: "lorem",
-    },
-  ];
-
+const BlogList = ({ blogList }) => {
   return (
     <Section className={`${styles.section} ${styles.blogList}`}>
       {/* <div className={`${styles.container}`}>
@@ -45,7 +12,7 @@ const BlogList = () => {
       </div> */}
 
       <div className={`${styles.container} ${styles.blogGrid}`}>
-        {blogContent.map((ele, ind) => (
+        {blogList.map((ele, ind) => (
           <Link href={"/blogs/" + ele.link}>
             <div className={`${styles.blogItem}`}>
               <div className={`${styles.blogImage}`}>
