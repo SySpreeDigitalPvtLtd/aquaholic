@@ -5,6 +5,7 @@ import Section from "../Common/Section";
 import Image from "next/image";
 import Link from "next/link";
 const BlogList = ({ blogList }) => {
+  console.log(blogList);
   return (
     <Section className={`${styles.section} ${styles.blogList}`}>
       {/* <div className={`${styles.container}`}>
@@ -13,20 +14,22 @@ const BlogList = ({ blogList }) => {
 
       <div className={`${styles.container} ${styles.blogGrid}`}>
         {blogList.map((ele, ind) => (
-          <Link href={"/blogs/" + ele.link}>
+          <Link href={"/blogs/" + ele?.slug}>
             <div className={`${styles.blogItem}`}>
               <div className={`${styles.blogImage}`}>
-                <Image src={ele.feat} />
+                <img src={ele?.frontmatter.cover_image} />
               </div>
-              <p className={`${styles.meta} ${styles.category}`}>{ele.meta}</p>
+              <p className={`${styles.meta} ${styles.category}`}>
+                {ele?.frontmatter.date}
+              </p>
               <h3 className={`${styles.title} ${styles.blogTitle}`}>
-                {ele.title}
+                {ele?.frontmatter.title}
               </h3>
               {/* <p className={`${styles.text}`}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
           numquam non fugit. Quaerat, corporis reprehenderit sint neque
         </p> */}
-              <Link href={"/blogs/" + ele.link}>
+              <Link href={"/blogs/" + ele?.slug}>
                 <div className={`${styles.btn} ${styles.blogBtn}`}>
                   Learn more
                 </div>

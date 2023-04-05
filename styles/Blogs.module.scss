@@ -38,7 +38,7 @@
     color: $secondary;
 }
 .content {
-    max-width: 600px;
+    // max-width: 600px;
 }
 .textDark {
     padding: 2rem 0rem;
@@ -82,22 +82,30 @@
 .blogList {
     .blogGrid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
         justify-content: space-between;
         gap: 1.5rem;
         .blogItem {
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            transition: 0.4s;
             display: flex;
             flex-direction: column;
             .blogImage {
                 display: flex;
-                margin: 1rem 0rem;
+                margin: 1.3rem 0rem;
                 border-radius: 10px;
                 overflow: hidden;
             }
-
+            .meta {
+                font-size: 0.8rem;
+            }
             .title {
-                font-size: 2rem;
+                font-size: 1.3rem;
                 padding: 0.5rem 0rem;
+                line-height: 1.3;
                 // padding-bottom: 0rem;
             }
             .text {
@@ -115,5 +123,19 @@
                 }
             }
         }
+    }
+}
+
+.blogSection {
+    .blogContent {
+        h2 {
+            padding: 1rem 0rem;
+        }
+        ol {
+            li {
+                padding: 0.3rem 0rem;
+            }
+        }
+        line-height: 1.5;
     }
 }
