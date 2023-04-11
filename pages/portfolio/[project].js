@@ -1,5 +1,4 @@
 import React from "react";
-
 import img1 from "../../public/Images/portfolio/portfolio-1.webp";
 import img2 from "../../public/Images/portfolio/portfolio-2.webp";
 import img3 from "../../public/Images/portfolio/portfolio-3.jpg";
@@ -31,12 +30,42 @@ import fairmont14 from "../../public/Images/portfolio/projects/project-1/fairmon
 
 const PortfolioProject = () => {
   // arrray containing all the project data on portfolio page
+  const fairmontImage = {
+    folder: "project-1",
+    picture: [
+      "fairmont-1.jpg",
+      "fairmont-2.jpg",
+      "fairmont-3.jpg",
+      "fairmont-4.jpg",
+      "fairmont-5.jpg",
+      "fairmont-6.jpg",
+      "fairmont-7.jpg",
+      "fairmont-8.jpg",
+    ],
+    gallery: [
+      "fairmont-gallery-1.jpg",
+      "fairmont-gallery-2.jpg",
+      "fairmont-gallery-3.jpg",
+      "fairmont-gallery-4.jpg",
+      "fairmont-gallery-5.jpg",
+      "fairmont-gallery-6.jpg",
+    ],
+  };
+
+  const allImage = (imageNames, folderName) => {
+    const commonPath = `/Images/portfolio/projects/${folderName}/`;
+    const images = imageNames.map((img, ind) => {
+      return commonPath + img;
+    });
+    return images;
+  };
 
   const galleryImg = [
     {
       src: img1,
       title: "Fairmont Bab Al Bahr",
       type: "Advertising, Newsletter, Social",
+      hero: fairmont4,
       category: "Web | Branding | Design",
       link: "fairmont-bab-al-bahr",
       content:
@@ -45,24 +74,8 @@ const PortfolioProject = () => {
       services: "Design | Advertising | Social",
       date: "2019-2020",
       website: "www.fairmont.com/abu-dhabi/",
-      featured: [
-        { img: fairmont1 },
-        { img: fairmont2 },
-        // { img: fairmont3 },
-        { img: fairmont4 },
-        { img: fairmont5 },
-        // { img: fairmont6 },
-        { img: fairmont7 },
-        { img: fairmont8 },
-      ],
-      gallery: [
-        { img: fairmont9 },
-        { img: fairmont10 },
-        { img: fairmont11 },
-        { img: fairmont12 },
-        { img: fairmont13 },
-        { img: fairmont14 },
-      ],
+      featured: allImage(fairmontImage.picture, "project-1"),
+      gallery: allImage(fairmontImage.gallery, "project-1"),
     },
     {
       src: img2,
@@ -70,6 +83,14 @@ const PortfolioProject = () => {
       type: "Brand Development, Photography",
       category: "Web | Branding | Design",
       link: "royal-catering",
+      content:
+        "With a combination of expertise, quality and innovation, Royal Catering Services has gained its reputation as one of the region’s leading catering and hospitality service providers. Founded in 2003, employing more than 2,500 highly trained professionals across its commercial, contractual and creations services.",
+      industry: "Hospitality",
+      services: "Design | Advertising | Social",
+      date: "2019-2020",
+      website: "www.fairmont.com/abu-dhabi/",
+      featured: allImage(fairmontImage.picture, "project-1"),
+      gallery: allImage(fairmontImage.gallery, "project-1"),
     },
 
     {

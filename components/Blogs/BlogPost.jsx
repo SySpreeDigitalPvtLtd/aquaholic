@@ -3,9 +3,9 @@ import Section from "../Common/Section";
 import styles from "../../styles/Blogs.module.scss";
 import { marked } from "marked";
 import Image from "next/image";
+import DOMPurify from "isomorphic-dompurify";
 
 const BlogPost = ({ blog, frontMatter, content }) => {
-  console.log(frontMatter);
   // const router = useRouter();
   // const blog = router.query.blog;
   // const content = blogList.find((ele) => ele.link === blog);
@@ -23,7 +23,9 @@ const BlogPost = ({ blog, frontMatter, content }) => {
         </div>
         <div
           className={`${styles.text} ${styles.blogContent}`}
-          dangerouslySetInnerHTML={{ __html: marked(content) }}
+          dangerouslySetInnerHTML={{
+            __html: DOMPurify.sanitize(marked(content)),
+          }}
         ></div>
       </div>
     </Section>

@@ -16,9 +16,16 @@ const Project = ({ projectList }) => {
   console.log(content);
 
   return (
-    <Section className={`${styles.section} ${styles.projectSection}`}>
-      <div className={`${styles.container}`}>
-        {/*       title: "Fairmont Bab Al Bahr",
+    <>
+      <Section
+        className={`${styles.section} ${styles.projectSection}`}
+        style={{
+          backgroundImage: `url(${content?.hero?.src})`,
+        }}
+      >
+        <div className={` ${styles.sectionOverlay}`}>
+          <div className={`${styles.container} ${styles.projectHero}`}>
+            {/*       title: "Fairmont Bab Al Bahr",
       type: "Advertising, Newsletter, Social",
       category: "Web | Branding | Design",
       link: "fairmont-bab-al-bahr",
@@ -28,65 +35,71 @@ const Project = ({ projectList }) => {
       services: "Design | Advertising | Social",
       date: "2019 - 2020",
       website: "www.fairmont.com/abu-dhabi/", */}
-        <div>
-          <p className={`${styles.meta}`}>{content?.category}</p>
-          <h1 className={`${styles.title}`}>{content?.title}</h1>
-          <p className={`${styles.text}`}>
+            <div className={`${styles.heroContent}`}>
+              <p className={`${styles.meta}`}>{content?.category}</p>
+              <h1 className={`${styles.title}`}>{content?.title}</h1>
+              {/* <p className={`${styles.text}`}>
             {content?.content ? content?.content : content?.type}
-          </p>
-        </div>
-        <div className={`${styles.stats}`}>
-          <div className={`${styles.group}`}>
-            <div className={`${styles.icon}`}>
-              <BsFillCalendarDateFill />
+          </p> */}
             </div>
+            <div className={`${styles.stats}`}>
+              <div className={`${styles.group}`}>
+                <div className={`${styles.icon}`}>
+                  <BsFillCalendarDateFill />
+                </div>
 
-            <p className={`${styles.meta} ${styles.text}`}>{content?.date}</p>
-          </div>
-          <div className={`${styles.group}`}>
-            <div className={`${styles.icon}`}>
-              <FaIndustry />
-            </div>
-            <p className={`${styles.meta} ${styles.text}`}>
-              {content?.industry}
-            </p>
-          </div>
-          <div className={`${styles.group}`}>
-            <div className={`${styles.icon}`}>
-              <MdOutlineDesignServices />
-            </div>
+                <p className={`${styles.meta} ${styles.text}`}>
+                  {content?.date}
+                </p>
+              </div>
+              <div className={`${styles.group}`}>
+                <div className={`${styles.icon}`}>
+                  <FaIndustry />
+                </div>
+                <p className={`${styles.meta} ${styles.text}`}>
+                  {content?.industry}
+                </p>
+              </div>
+              <div className={`${styles.group}`}>
+                <div className={`${styles.icon}`}>
+                  <MdOutlineDesignServices />
+                </div>
 
-            <p className={`${styles.meta} ${styles.text}`}>
-              {content?.services}
-            </p>
-          </div>
-          <div className={`${styles.group}`}>
-            <div className={`${styles.icon}`}>
-              <ImSphere />
-            </div>
+                <p className={`${styles.meta} ${styles.text}`}>
+                  {content?.services}
+                </p>
+              </div>
+              <div className={`${styles.group}`}>
+                <div className={`${styles.icon}`}>
+                  <ImSphere />
+                </div>
 
-            <p className={`${styles.meta} ${styles.text}`}>
-              {content?.website}
-            </p>
+                <p className={`${styles.meta} ${styles.text}`}>
+                  {content?.website}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className={`${styles.container} ${styles.images}`}>
-        {/* <Image src={content?.src} /> */}
-        {content?.featured?.map((ele, ind) => (
-          <div className={`${styles.featuredImage}`}>
-            <Image src={ele.img} />
-          </div>
-        ))}
-      </div>
-      <div className={`${styles.container} ${styles.gallerySection}`}>
-        <div className={`${styles.content}`}>
-          <p className={`${styles.meta}`}>GALLERY</p>
-          <h2 className={`${styles.titleTwo}`}>Project Gallery</h2>
+      </Section>
+      <Section className={`${styles.section} ${styles.gallerySection}`}>
+        <div className={`${styles.container} ${styles.images}`}>
+          {/* <Image src={content?.src} /> */}
+          {content?.featured?.map((ele, ind) => (
+            <div className={`${styles.featuredImage}`}>
+              <img src={ele} />
+            </div>
+          ))}
         </div>
-      </div>
-      <div className={`${styles.projectGallery}`}></div>
-    </Section>
+        <div className={`${styles.container} ${styles.gallerySection}`}>
+          <div className={`${styles.content}`}>
+            <p className={`${styles.meta}`}>GALLERY</p>
+            <h2 className={`${styles.titleTwo}`}>Project Gallery</h2>
+          </div>
+        </div>
+        <div className={`${styles.projectGallery}`}></div>
+      </Section>
+    </>
   );
 };
 
