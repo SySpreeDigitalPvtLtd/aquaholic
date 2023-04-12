@@ -81,8 +81,9 @@
 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     @include mobile {
-        min-height: 70vh;
+        min-height: 90vh;
         background-size: cover;
     }
 
@@ -95,30 +96,17 @@
         align-items: flex-end;
         justify-content: center;
         @include mobile {
-            min-height: 70vh;
+            min-height: 90vh;
         }
         .container {
             padding-bottom: 2rem;
         }
     }
 
-    .images {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 1.2rem;
-        .featuredImage {
-            display: flex;
-            overflow: hidden;
-            max-width: fit-content;
-        }
-    }
     .stats {
         display: flex;
-        gap: 1.2rem;
-        justify-content: space-between;
+        gap: 1.7rem;
+        justify-content: flex-start;
         @include tablet {
             flex-direction: column;
             gap: 0rem;
@@ -126,10 +114,26 @@
         .group {
             .icon {
                 color: $tertiary;
+                font-size: 1.4rem;
             }
             display: flex;
             align-items: center;
             gap: 0.6rem;
+        }
+    }
+}
+.gallerySection {
+    .images {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .featuredImage {
+            display: flex;
+            overflow: hidden;
+            max-width: fit-content;
+            margin: 0.5rem 0rem;
         }
     }
 }

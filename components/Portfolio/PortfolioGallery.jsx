@@ -28,9 +28,13 @@ const PortfolioGallery = ({ imageGallery }) => {
             <p className={`${styles.meta}`}>{ele.category}</p>
             <h2 className={`${styles.title}`}>{ele.title}</h2>
             <p className={`${styles.text}`}>{ele.type}</p>
-            <Link href={"/portfolio/" + ele.link}>
-              <button className={`${styles.btn} my-1`}>Learn More</button>
-            </Link>
+            {ele?.link ? (
+              <Link href={"/portfolio/" + ele.link}>
+                <button className={`${styles.btn} my-1`}>Learn More</button>
+              </Link>
+            ) : (
+              ""
+            )}
           </div>
           <div className={`${styles.image}`}>
             <Image

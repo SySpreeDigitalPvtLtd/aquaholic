@@ -18,7 +18,7 @@
     line-height: 1.15;
     padding: 1rem 0rem;
     @include mobile {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 .highlight {
@@ -127,13 +127,49 @@
 }
 
 .blogSection {
+    .container {
+        max-width: 800px;
+    }
     .blogContent {
+        a {
+            color: $tertiary;
+            font-weight: bold;
+            &:hover {
+                border-bottom: 0.5px solid $tertiary;
+            }
+        }
+        p {
+            margin: 1rem 0rem;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
         h2 {
-            padding: 1rem 0rem;
+            // padding: 1rem 0rem;
+            margin: 1rem 0rem;
+            font-size: 1.8rem;
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            margin: 1rem 0rem;
+            font-size: 1.3rem;
+        }
+        h4 {
+            margin: 1rem 0rem;
         }
         ol {
+            padding-left: 1.5rem;
             li {
-                padding: 0.3rem 0rem;
+                padding: 0.1rem 0rem;
+                list-style-type: decimal;
+            }
+        }
+        ul {
+            padding-left: 1.5rem;
+            li {
+                padding: 0.1rem 0rem;
+                list-style-type: disc;
             }
         }
         line-height: 1.5;

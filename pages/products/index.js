@@ -19,7 +19,8 @@ const products = () => {
     {
       product: "Flags and Poles",
       meta: "Custom flags and banners, UAE",
-      content: "We provide high-calibre custom flag printing Abu Dhabi.",
+      content:
+        "Flags are overtaking banners as the preferred display at exhibitions, trade shows and outdoor events. We provide high-calibre custom flag printing Abu Dhabi.",
       images: [
         { src: img1, category: "Feather Flags" },
         { src: img2, category: "Feather Flags" },
@@ -29,7 +30,8 @@ const products = () => {
     {
       product: "Exhibition and Display Products",
       meta: "Display Products",
-      content: "Make your exhibition stand stand out with portable displays",
+      content:
+        "Make your exhibition stand stand out with portable displays that are easy to install, easy to transport and hard to beat when looking for impact and value.",
       images: [
         { src: img3, category: "Pop up exhibition display" },
         { src: img4, category: "Rollup Banners" },
@@ -39,7 +41,8 @@ const products = () => {
     {
       product: "Umbrella Shades and Tents",
       meta: "Umbrella Shades",
-      content: "Custom printed outdoor beach umbrellas and tents ",
+      content:
+        "Custom printed outdoor beach umbrellas and tents are ideal for outdoor events and exhibitions.",
       images: [
         { src: img10, category: "Umbrella Shades" },
         { src: img11, category: "Popup Tents" },
@@ -59,7 +62,8 @@ const products = () => {
     {
       product: "Digital Printing",
       meta: "printing",
-      content: "State-of-the-art digital printing",
+      content:
+        "State-of-the-art digital printing that guarantees precision, high resolution and quality finishing, giving your product the desired look and feel.",
       images: [
         { src: img7, category: "Wall Sticker" },
         { src: img8, category: "Frosted Sticker" },
@@ -71,7 +75,7 @@ const products = () => {
       product: "Offset Printing",
       meta: "printing",
       content:
-        "Offset printing press offering top-notch quality, efficiency, and professionalism.",
+        "Offset printing press services that has been known for quality services, exceptional efficiency and the highest level of professionalism.",
       images: [
         { src: img5, category: "Customized Packaging" },
         { src: img6, category: "Brochures" },

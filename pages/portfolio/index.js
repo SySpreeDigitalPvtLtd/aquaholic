@@ -119,13 +119,7 @@ const portfolio = () => {
       category: "Web | Branding | Design",
       link: "delecto",
     },
-    {
-      src: img5,
-      title: "Catch",
-      type: "Brand Development, Social and Photography",
-      category: "Web | Branding | Design",
-      link: "catch",
-    },
+
     {
       src: img6,
       title: "Qasr Al Watan",
@@ -140,13 +134,7 @@ const portfolio = () => {
       category: "Web | Branding | Design | Advertising | Photography",
       link: "adnh-compass",
     },
-    {
-      src: img8,
-      title: "VOLO",
-      type: "Branding Print",
-      category: "Web | Branding | Advertising ",
-      link: "volo",
-    },
+
     {
       src: img9,
       title: "Armed forces officers club and hotel",
@@ -155,25 +143,38 @@ const portfolio = () => {
       link: "armed-forces-officers-club-and-hotel",
     },
     {
+      src: img5,
+      title: "Catch",
+      type: "Brand Development, Social and Photography",
+      category: "Web | Branding | Design",
+    },
+    {
+      src: img8,
+      title: "VOLO",
+      type: "Branding Print",
+      category: "Web | Branding | Advertising ",
+      // link: "volo",
+    },
+    {
       src: img10,
       title: "YAS Island",
       type: "Branding, Design and Print",
       category: "Web | Branding | Design | Photography",
-      link: "yas-island",
+      // link: "yas-island",
     },
     {
       src: img11,
       title: "Baguette Catering",
       type: "Design, Photography",
       category: "Advertising | Design",
-      link: "baguette-catering",
+      // link: "baguette-catering",
     },
     {
       src: img12,
       title: "Louvre Abu Dhabi",
       type: "Branding",
       category: "Advertising | Design | Photography",
-      link: "louvre-abu-dhabi",
+      // link: "louvre-abu-dhabi",
     },
   ];
 

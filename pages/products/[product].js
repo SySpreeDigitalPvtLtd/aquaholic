@@ -18,7 +18,8 @@ const ProductPage = () => {
     {
       product: "Flags and Poles",
       meta: "Custom flags and banners, UAE",
-      content: "We provide high-calibre custom flag printing Abu Dhabi.",
+      content:
+        "They come in so many more shapes and sizes and are much more versatile than a traditional banner. Custom printed, National, International, Angled, County, Feather, Banner, Crowd, Handwaving, Guard of Honour and Portrait flags are just to name a few types of what we supply. If you’re looking for something custom made, we have wide format printers in-house so can print all kind of flags, bunting, signage and display products all at competitive prices.",
       images: [
         { src: img1, category: "Feather Flags" },
         { src: img2, category: "Feather Flags" },
@@ -28,7 +29,8 @@ const ProductPage = () => {
     {
       product: "Exhibition and Display Products",
       meta: "Display Products",
-      content: "Make your exhibition stand stand out with portable displays",
+      content:
+        "We offer a full range of innovative exhibition & trade show products including custom exhibition stands, portable exhibition modules, branded trade show display stands & an eye catching trade show backdrop. We also have accessories to really make your stand one to remember at your next trade show. If you are not sure what you need give us a call & we can have you walk you through the products and get you ready for your next exhibit!",
       images: [
         { src: img3, category: "Pop up exhibition display" },
         { src: img4, category: "Rollup Banners" },
@@ -38,7 +40,8 @@ const ProductPage = () => {
     {
       product: "Umbrella Shades and Tents",
       meta: "Umbrella Shades",
-      content: "Custom printed outdoor beach umbrellas and tents ",
+      content:
+        "Our commercial grade outdoor canopies are made from strong fabric that can withstand any environmental conditions and help your brand get noticed! If you are not sure what you need give us a call & we can have you walk you through the products and get you ready for your next exhibit!",
       images: [
         { src: img10, category: "Umbrella Shades" },
         { src: img11, category: "Popup Tents" },
@@ -48,7 +51,8 @@ const ProductPage = () => {
     {
       product: "PVC Cards",
       meta: "PVC",
-      content: "Printing of PVC cards",
+      content:
+        "Affordable printing of PVC cards with complete flexibility, from loyalty cards, gift cards, and VIP cards to any other pre-printed card services.",
       images: [
         { src: img12, category: "PVC Card" },
         { src: img9, category: "PVC Card" },
@@ -58,7 +62,8 @@ const ProductPage = () => {
     {
       product: "Digital Printing",
       meta: "printing",
-      content: "State-of-the-art digital printing",
+      content:
+        "For banners, posters, window stickers, totems, roll up banners and all other advertising solutions, we provide integrated printing solutions for all your marketing and communications collateral. Aquaholic Solutions provides high-quality glass partition sticker design in UAE along with window branding service in UAE",
       images: [
         { src: img7, category: "Wall Sticker" },
         { src: img8, category: "Frosted Sticker" },
@@ -70,7 +75,7 @@ const ProductPage = () => {
       product: "Offset Printing",
       meta: "printing",
       content:
-        "Offset printing press offering top-notch quality, efficiency, and professionalism.",
+        "You can count on our offset printing press services to not only meet, but exceed all your needs and requests. Learn more about the services we provide below, and let us know if you’d like to learn more about a specific offering.",
       images: [
         { src: img5, category: "Customized Packaging" },
         { src: img6, category: "Brochures" },

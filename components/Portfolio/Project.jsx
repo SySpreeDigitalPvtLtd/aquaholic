@@ -25,16 +25,6 @@ const Project = ({ projectList }) => {
       >
         <div className={` ${styles.sectionOverlay}`}>
           <div className={`${styles.container} ${styles.projectHero}`}>
-            {/*       title: "Fairmont Bab Al Bahr",
-      type: "Advertising, Newsletter, Social",
-      category: "Web | Branding | Design",
-      link: "fairmont-bab-al-bahr",
-      content:
-        "Situated at the gateway to the capital city of the UAE is Fairmont Bab Al Bahr, a beachfront five-star hotel in Abu Dhabi with unrivalled views of a design masterpiece - The Sheikh Zayed Grand Mosque. Fairmont’s world-class dining, including Marco Pierre White Restaurant from the former three-Michelin-star British chef, complete the luxury experience.",
-      industry: "Hospitality",
-      services: "Design | Advertising | Social",
-      date: "2019 - 2020",
-      website: "www.fairmont.com/abu-dhabi/", */}
             <div className={`${styles.heroContent}`}>
               <p className={`${styles.meta}`}>{content?.category}</p>
               <h1 className={`${styles.title}`}>{content?.title}</h1>
@@ -43,41 +33,57 @@ const Project = ({ projectList }) => {
           </p> */}
             </div>
             <div className={`${styles.stats}`}>
-              <div className={`${styles.group}`}>
-                <div className={`${styles.icon}`}>
-                  <BsFillCalendarDateFill />
-                </div>
+              {content?.date ? (
+                <div className={`${styles.group}`}>
+                  <div className={`${styles.icon}`}>
+                    <BsFillCalendarDateFill />
+                  </div>
 
-                <p className={`${styles.meta} ${styles.text}`}>
-                  {content?.date}
-                </p>
-              </div>
-              <div className={`${styles.group}`}>
-                <div className={`${styles.icon}`}>
-                  <FaIndustry />
+                  <p className={`${styles.meta} ${styles.text}`}>
+                    {content.date}
+                  </p>
                 </div>
-                <p className={`${styles.meta} ${styles.text}`}>
-                  {content?.industry}
-                </p>
-              </div>
-              <div className={`${styles.group}`}>
-                <div className={`${styles.icon}`}>
-                  <MdOutlineDesignServices />
+              ) : (
+                ""
+              )}
+              {content?.industry ? (
+                <div className={`${styles.group}`}>
+                  <div className={`${styles.icon}`}>
+                    <FaIndustry />
+                  </div>
+                  <p className={`${styles.meta} ${styles.text}`}>
+                    {content.industry}
+                  </p>
                 </div>
+              ) : (
+                ""
+              )}
+              {content?.services ? (
+                <div className={`${styles.group}`}>
+                  <div className={`${styles.icon}`}>
+                    <MdOutlineDesignServices />
+                  </div>
 
-                <p className={`${styles.meta} ${styles.text}`}>
-                  {content?.services}
-                </p>
-              </div>
-              <div className={`${styles.group}`}>
-                <div className={`${styles.icon}`}>
-                  <ImSphere />
+                  <p className={`${styles.meta} ${styles.text}`}>
+                    {content.services}
+                  </p>
                 </div>
+              ) : (
+                ""
+              )}
+              {content?.website ? (
+                <div className={`${styles.group}`}>
+                  <div className={`${styles.icon}`}>
+                    <ImSphere />
+                  </div>
 
-                <p className={`${styles.meta} ${styles.text}`}>
-                  {content?.website}
-                </p>
-              </div>
+                  <p className={`${styles.meta} ${styles.text}`}>
+                    {content.website}
+                  </p>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
@@ -86,7 +92,7 @@ const Project = ({ projectList }) => {
         <div className={`${styles.container} ${styles.images}`}>
           {/* <Image src={content?.src} /> */}
           {content?.featured?.map((ele, ind) => (
-            <div className={`${styles.featuredImage}`}>
+            <div key={ind} className={`${styles.featuredImage}`}>
               <img src={ele} />
             </div>
           ))}

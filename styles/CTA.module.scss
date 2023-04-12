@@ -105,6 +105,7 @@
         justify-content: space-between;
         @include tablet {
             flex-direction: column;
+            padding: 5rem 1rem;
         }
         .content {
             max-width: 700px;
