@@ -22,26 +22,26 @@ const NavBar = () => {
         <div className={`${styles.navContainer}`}>
           <div className={`${styles.menuList}`}>
             <ul>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/"}>Home</Link>
               </li>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/about"}>About</Link>
               </li>
 
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/services"}>Services</Link>
               </li>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/products"}>Products</Link>
               </li>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/portfolio"}>Portfolio</Link>
               </li>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/blogs"}>Blogs</Link>
               </li>
-              <li>
+              <li onClick={() => navVisible()}>
                 <Link href={"/contact"}>Contact</Link>
               </li>
             </ul>
